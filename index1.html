@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/mind1.css">
+	<title>Mochileros CHILE</title>
+</head>
+<body>
+
+<!--CONTAINER NAVEGADOR-->	
+	<header>
+		<nav class="navbar navbar-default navbar-inverse">
+  		<div class="container">
+    		<div class="navbar-header"><!-- MENU BAR MOVIL-->	
+			    <button  data-toggle="modal" data-target="#exampleModal" type="button" class="navbar-toggle collapsed btnBar" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			      <span class="sr-only">Toggle navigation</span>
+			      <span class="icon-bar"></span>
+			    	<span class="icon-bar"></span>
+			     	<span class="icon-bar"></span>
+			    </button>
+			    <img  class="carpLogo" src="assets/img/carpa.png" alt="">
+			  </div>
+
+<!-- NAVEGADOR DESKTOP -->
+			  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			    <ul class="nav navbar-nav navbar-right">
+			      <li><a href="#">Regístrate</a></li>
+			      <li><a href="#">Inicia Sesión</a></li>
+					</ul>
+			  </div><!-- /.navbar-collapse -->
+			</div><!-- /.container-->
+		</nav>
+	</header>
+
+<!--IMAGEN CAMPING DE FONDO-->
+	<section>
+		<div class="row">
+			<div class="imgCamping col-md-12 col-xs-12 col-sm-12 col-lg-12">
+	<!--Card Yellow-->
+				<div class="card hidden-xs hidden-sm">
+					<div class=" cardYellow card-body container-card col-md-5 col-md-offset-7">
+						<h1 class="card-title">Disfruta del Viaje</h1>
+						<h1 class="titleh1">Busca tu camping</h1>
+						<a href="#" class="btn btn-default" data-toggle="modal" data-target="#registerModal">REGISTRATE</a>
+						<p class="pline"><span class="line1">____________</span>o bien<span class="line2">____________</span></p>
+						<button href="#" class="btn btn-default">Recomienda un Camping</button>
+					</div>
+				</div>
+	<!--Card BITACORA Y CHAT-->
+				<div class=" hidden-md hidden-lg ">
+					<div class="row">
+						<div class="container-fluid">
+							<div class="col-xs-6 binnacle text-center">
+								<h5> Bitácora de viajes</h5>
+								<img class="mochilero img-circle"" src="assets/img/mochilero.jpg" alt="">
+								<p ><dt>Mochileros y sus historias</dt></p>
+							</div>
+
+							<div class="col-xs-6 binnacle text-center"><!--container CHAT-->
+								<h5>Chat</h5>
+								<img class="chat-img img-circle" src="assets/img/chat.png" alt="">
+								<div class="text-chat">
+									<p><dt>Habla con otros mochileros</dt></p>	
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row"><!--container registro-->
+						<div class="col-xs-12">
+							<div class="container">
+								<h2>REGISTRATE</h2>
+								<p>¡Guarda tus viajes!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+<!--SECTION MAPA-->
+	<section class="map">
+		<div class="row">
+			<div class=" col-lg-6 col-md-6 borderTarif">
+				<div class="container-fluid">
+				
+					<!--input One-->
+				  <div class="row">
+				  		<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
+				  			<h2>REVISA LOS CAMPING EN TU RUTA</h2>
+				  			<div class="input-group">
+			  					<span class="input-group-addon"><img src="assets/img/shape.png" alt="" id="sizing-addon2"></span>
+			  					<input type="text" class="input-first form-control" placeholder="Ingrese su punto de partida" aria-describedby="sizing-addon2">
+							</div>
+				  		</div>
+					</div>
+					<!--Input Two-->
+					<div class="row">
+				  		<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
+				  			<div class="input-group">
+			  					<span class="input-group-addon"><img src="assets/img/shape2.png" alt="" id="sizing-addon2"></span>
+			  					<input type="text" class="input-first form-control" placeholder="Ingrese su destino" aria-describedby="sizing-addon2">
+							</div>
+				  		</div>
+					</div>
+					<!--Button-->
+					<div class="row">
+						<div class="col-md-7  col-xs-12 col-sm-12 col-lg-12 ">
+							<button class="btn-road"><strong>¡Trazar ruta!</strong></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Photo MAP-->
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">		
+				<div class="photo-map">
+				    <iframe class="map1 hidden-xs hidden-sm img-responsive  " src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d54562569.19495025!2d-70.63952465!3d-33.417118800000004!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1512518657591" width="300" height="300" frameborder="0"  allowfullscreen></iframe>
+
+				      <iframe class="map2 hidden-md hidden-lg img-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.1610416131766!2d-70.64394908529869!3d-33.41904558078295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5ebb6bcdd1f%3A0x98ac0f5d7d2c951f!2sPuma+1180%2C+Recoleta%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses-419!2scl!4v1512512364870" frameborder="0"  allowfullscreen></iframe>
+				</div>
+			</div>   	
+		</div>
+	</section>
+
+	<footer>
+    	<div class="container">
+     		<div class="row">
+      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        			<div class="page-header">
+          			<img class="carpLogo2" src="assets/img/carpa.png" alt="">
+        			</div>
+       		</div>
+      	</div>
+      	<div class="row page-header">
+        		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 hidden-xs hidden-sm visibility-lg visibility-md">
+          		<ul class="icons">
+            		<li class="iconos"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+            		<li class="iconos"> <i class="fa fa-twitter" aria-hidden="true"></i></li>
+            		<li class="iconos"><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+            		<li class="iconos"><i class="fa fa-apple" aria-hidden="true"></i></li>
+            		<li class="iconos"><i class="fa fa-play" aria-hidden="true"></i></li>
+          		</ul>
+        		</div>
+        		<div class="col-lg-3 col-md-3 col col-sm-6 col-xs-6">
+          		<ul>
+            		<li>Los Blogs más comentados</li>
+            		<li>Campings</li>
+            		<li>Campings Gratuitos</li>
+            		<li>Eventos/Fiestas Costumbristas</li>
+            		<li>Picadas de comida</li>
+            		<li>Abastecimiento</li>
+            		<li>Consejos</li>
+          		</ul>
+        		</div>
+      		
+        		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 hidden-lg hidden-md visible-xs visible-sm">
+         		<ul class="icons2">
+            		<li class="iconos2"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+            		<li class="iconos2"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+            		<li class="iconos2"><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+            		<li class="iconos2"><i class="fa fa-apple" aria-hidden="true"></i></li>
+            		<li class="iconos2"><i class="fa fa-play" aria-hidden="true"></i></li>
+          		</ul>
+        		</div>
+        		<div class="col-lg-3 col-md-3 col col-sm-6 col-xs-6">
+         		<img src="assets/img/appstore.png" class="img-responsive" alt="">
+          		<img src="assets/img/enBadgeWebGeneric.png" class="img-responsive webGeneric">
+        		</div>
+   		</div>
+  
+      	<div class="row" class="LabcarFooter">
+        		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          		<p>&#169; Mochileron en ruta</p>
+        		</div>
+      	</div>
+      </div>
+   </footer>
+
+ 
+
+
+
+
+ 
+ <!--MODAL DE INICIA SESION-->
+			
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  			<div class="modal-dialog" role="document">
+    			<div class="modal-content">
+
+     				<div class="modal-header">
+        				<h5 class="modal-title" id="exampleModalLabel">Inicia Sesión</h5>
+        				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          				<span aria-hidden="true">&times;</span>
+        				</button>
+      			</div>
+
+      			<div class="modal-body">
+        				<form >
+						  	<div class="imgcontainer">
+						    	<img src="assets/img/img_avatar2.png" alt="Avatar" class="avatar">
+						  	</div>
+							<div class="container-fluid">
+							   <label><b>Username</b></label>
+							   <input type="text" placeholder="Enter Username" name="uname" required> <br>
+								<label><b>Password</b></label>
+							   <input type="password" placeholder="Enter Password" name="psw" required>
+							</div> 
+						</form>
+					</div>
+    
+      			<div class="modal-footer"> 
+				    	<button  class="loginbtn" type="submit">Login</button>
+				    	<input type="checkbox" checked="checked"> Remember me
+				  		<div class="container containerbtnCancel" style="background-color:#f1f1f1">
+				    		<button type="button" class="cancelbtn" data-dismiss="modal">Cancel</button>
+				    	</div>
+				  		<span class="psw">Forgot <a href="#">password?</a></span>
+					</div>
+    			</div>
+  			</div>
+		</div>
+		
+
+<!--MODAL REGISTER -->
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="modal fade" id="registerModal" tabindex="-1" role="dialog">
+						<div class="modal-dialog" role="document">
+						   <div class="modal-content">
+						      <div class="modal-header">
+						        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						      	<div class="container-fluid">
+						        		<div class="row">
+						        			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						        				<h4 class="modal-title contTitleModal ">Ya tienes una cuenta?</h4>
+						        				<h5 class="modalTitle2"> O CREA UNA CUENTA NUEVA</h5>
+						        			</div>
+						        		</div>
+						      	</div>
+						      </div>
+						      <div class="container-fluid">
+						        	<div class="row">
+						        		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						        			<div class="form-group">
+											   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Nombre">
+											</div>
+						        		</div>
+						        		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						        			<div class="form-group">
+											   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Apellido">
+											</div>
+						        		</div>
+						        	</div>
+						   	</div>
+						      <div class="container-fluid">
+						        	<div class="row">
+						        		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						        			<div class="modal-body">
+						       				<form>
+													<div class="form-group">
+														<input type="password" class="form-control"  placeholder="Correo electronico ejemplo@correo.com">
+													</div>
+													<div class="form-group">
+														<input type="password" class="form-control"  placeholder="Teléfono">
+													</div>
+													<div class="form-group">
+														<input type="password" class="form-control"  placeholder="Contraseña">
+													</div>
+													<div class="form-group">
+														<input type="password" class="form-control"  placeholder="Ciudad">
+													</div>
+													<div class="form-group">
+														<input type="password" class="form-control"  placeholder="(Opcional) Codigo de Ciudad">
+													</div>
+													<div class="dropdown">
+														<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="	dropdown" aria-haspopup="true" aria-expanded="true">
+																			    Como te enteraste de Nosotros?
+														<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+															<li><a href="#">Internet</a></li>
+															<li><a href="#">Redes Sociales</a></li>
+															<li><a href="#">Prensa</a></li>
+															<li role="separator" class="divider"></li>
+															<li><a href="#">Recomendación</a></li>	
+														</ul>
+													</div>
+												</form>	  
+											</div>		
+						      		</div>		
+						        	</div>
+						      </div>
+						   </div>
+						</div>
+					</div>
+				</div>
+			</div>
+								
+
+<!--MODAL3  REGISTRO CONDUCTOR-->
+
+			<!-- Modal -->
+			<div id="registerDrive" class="modal fade" role="dialog">
+  				<div class="modal-dialog">
+
+    <!-- Modal content-->
+    				<div class="modal-content">
+     			 		<div class="modal-header">
+        					<button type="button" class="close" data-dismiss="modal">&times;</button>
+        					<h4 class="modal-title">Modal Header</h4>
+      				</div>
+      				<div class="modal-body">
+        					<p>Some text in the modal.</p>
+      				</div>
+      				<div class="modal-footer">
+        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      				</div>
+    				</div>
+				</div>
+			</div>
+
+
+
+	<script src="https://use.fontawesome.com/7e3056ac5b.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
+
+	
+	
