@@ -62,7 +62,7 @@
 
 /**/
 .binnacle{  /*bitacota*/
-	background-color: #FFFFFF;
+	background-color:rgba(192,192,192,0.3);
 	color: #000000;
 	border-radius: 18px;
 
@@ -80,9 +80,8 @@
 	height: 100px;
 }
 
-.chat{
-	background-color: #FFFFFF;
-}
+
+
 .chat-img{
 	width: 100px;
 	height:100px;
@@ -91,10 +90,22 @@
 .text-chat{
 	padding-top: 10px;
 }
+
+
+/*BOTON REGISTRO*/
+
+.registry{
+	background-color:rgba(0,0,255,0.3);
+	color:#58FAAC;
+	margin-right: 20px;
+	margin-top: 5px;
+	border-radius: 15px;
+
+}
 /*SECTION MAPA*/
 
 .map{
-	background-color: #01DFA5;
+	background: linear-gradient(#151515,#01DFA5);
 	color: #fff;
 }
 
