@@ -12,7 +12,7 @@
 <body>
 
 <!--CONTAINER NAVEGADOR-->	
-	<header>
+	<header id="pagina-principal">
 		<nav class="navbar navbar-default navbar-inverse">
   		<div class="container">
     		<div class="navbar-header"><!-- MENU BAR MOVIL-->	
@@ -37,7 +37,7 @@
 	</header>
 
 <!--IMAGEN CAMPING DE FONDO-->
-	<section>
+	<section id="img-camping"><!--ID IMG-CAMPING-->
 		<div class="row">
 			<div class="imgCamping col-md-12 col-xs-12 col-sm-12 col-lg-12">
 	<!--Card Yellow-->
@@ -54,7 +54,7 @@
 				<div class=" hidden-md hidden-lg ">
 					<div class="row">
 						<div class="container-fluid">
-							<div class="col-xs-6 binnacle text-center">
+							<div class="col-xs-6 binnacle text-center" id="binnacle-link">
 								<h5> Bitácora de viajes</h5>
 								<img class="mochilero img-circle"" src="assets/img/mochilero.jpg" alt="">
 								<p ><dt>Mochileros y sus historias</dt></p>
@@ -81,11 +81,11 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section><!--CLOSE IMG-CAMPING-->
 
 
 <!--SECTION MAPA-->
-	<section class="map">
+	<section class="map" id="map">
 		<div class="row">
 			<div class=" col-lg-6 col-md-6 borderTarif">
 				<div class="container-fluid">
@@ -126,9 +126,9 @@
 				</div>
 			</div>   	
 		</div>
-	</section>
+	</section><!--close id map-->
 
-	<footer>
+	<footer id="footer">
     	<div class="container">
      		<div class="row">
       		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -148,7 +148,7 @@
           		</ul>
         		</div>
         		<div class="col-lg-3 col-md-3 col col-sm-6 col-xs-6">
-          		<ul>
+          		<ul class="text-footer">
             		<li>Los Blogs más comentados</li>
             		<li>Campings</li>
             		<li>Campings Gratuitos</li>
@@ -174,16 +174,14 @@
         		</div>
    		</div>
   
-      	<div class="row" class="LabcarFooter">
+      	<div class="row">
         		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           		<p>&#169; Mochileron en ruta</p>
         		</div>
       	</div>
       </div>
-   </footer>
-
- 
-
+   </footer><!--close id footers-->
+	
 
 
 
@@ -326,12 +324,9 @@
 				</div>
 			</div>
 
-
-
-	<script src="https://use.fontawesome.com/7e3056ac5b.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+<script src="assets/js/app.js"></script>
 </body>
 </html>
 

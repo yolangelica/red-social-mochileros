@@ -136,7 +136,7 @@
 
 }
 
-.borderTarif{
+.borderTarif{/*margen texto buscar ruta*/
 	padding-top: 5%;
 	padding-left: 3%;
 }
@@ -186,8 +186,13 @@ footer{
 .icons{
   padding-top: 55%;
 }
-li{
-  list-style: none;
+
+
+.text-footer{
+	font-size: 12px;
+	padding-left: 0;
+	 
+
 }
 .iconos2{
   display: inline-block;
@@ -196,6 +201,7 @@ li{
 .webGeneric{
 	margin-top: 5%;
 }
+
 
 /*MODAL DE INICIA SESION */
 form {
