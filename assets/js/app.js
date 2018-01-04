@@ -20,3 +20,32 @@ document.getElementById("defaultOpen").click();
 //CLOSE TABS
 
 
+var idPin= 0 ;
+$(document).ready(()=> {
+
+});
+
+
+
+function savePin(){
+    var titulo = $("#tituloInput").val();//crea variable para rescatar valor escrito por usuario en titulo llamando ID desde HTML
+    var descripcion = $("#descripcionInput").val();//toma el valor de la descripcion
+    var url= $("#urlInput").val();// toma el valor de la URL
+
+    $("#pines").append("<div id='pin_" + idPin + " ' class='pin col-md-3'>" + 
+    //este es el frente
+    "<div class='panel panel-success front'>" +
+    "<div class='panel-heading'>" +
+    "<h3 class='panel-title'>" + titulo + "</h3>" + "</div>" +
+    "<div class= 'panel-body'>" +
+    "<a href='#' class='thumbnail'>" +
+    "<img src='" + url + " ' alt='...'>" +
+    "</a>" + 
+    "</div>" + 
+    "<div class='panel-footer'>" + descripcion + "</div> </div>" + 
+    //este es el panel detras 
+    "<div class= 'rear'>" + 
+    "</div>" + 
+    "</div>");
+
+};
