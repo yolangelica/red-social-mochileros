@@ -19,7 +19,7 @@ function openCity(evt, cityName) {
 document.getElementById("defaultOpen").click();
 //CLOSE TABS
 
-
+/* CREA BITACORAS*/
 var idPin= 0 ;
 $(document).ready(()=> {
 
@@ -56,7 +56,25 @@ function savePin(){
 function changeColor(x)
 {
         x.style.color="red";
-       
-
-   
 }
+
+/* RED DE CONTACTOS*/
+
+  function save(){
+
+    $("#mochileros").append("<div id='pin_" + idPin + " ' class='pin col-md-3'>" + 
+    //este es el frente
+    "<div class='panel panel-success front'>" +
+    "<div class='panel-heading'>" +
+    "<h3 class='panel-title'>" + titulo + "</h3>" + "</div>" +
+    "<div class= 'panel-body'>" +
+    "<a href='#' class='thumbnail'>" +
+    "<img src='" + url + " ' alt='...'>" +
+    "</a>" + 
+    "</div>" + 
+    "<div class='panel-footer'>" + descripcion + "</div> </div>" + 
+    //este es el panel detras 
+    "<div class= 'rear'>" + 
+    "</div>" + 
+    "</div>");
+};
