@@ -1,1 +1,18 @@
-
+body {
+	background-image: url(../img/camping.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-clip: border-box;
+	background-position: center;
+  	height: 100vh;
+}
+.content h1 {
+ 	color: #fff;
+}
+.newComment {
+  background-color: rgb(222, 253, 226);
+  border: 1px solid black;
+}
+.comment {
+  border: 1px solid black;
+}
