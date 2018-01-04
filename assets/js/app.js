@@ -49,3 +49,14 @@ function savePin(){
     "</div>");
 
 };
+
+
+/*CAMBIAR COLOR A CORAZON AL HACER CLICK*/
+
+function changeColor(x)
+{
+        x.style.color="red";
+       
+
+   
+}

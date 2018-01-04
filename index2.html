@@ -66,11 +66,10 @@
 							</div>
 						</div>
 						<div class="col-xs-5"><!--SEGUNDA COLUMNA CREAR BITACORA Y MODAL-->
-							<h6>Comienza y escribe tu historia!</h6>
+							<h6 class="text-center">Comienza y escribe tu historia!</h6>
   						<!-- Trigger the modal with a button -->
-  						<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><h6>Crear bitacora</h6></button>
-							<!-- Modal -->
-  						<div class="modal fade" id="myModal" role="dialog">
+  						<button type="button" class="btn btn-info btn-lg btn-bitacora" data-toggle="modal" data-target="#myModal"><h6>Crear bitacora</h6></button>
+							<div class="modal fade" id="myModal" role="dialog">
     						<div class="modal-dialog">
     							<!-- Modal content-->
       						<div class="modal-content">
@@ -106,7 +105,6 @@
       						</div>
       					</div>
   						</div>
-  					</div><!--close segunda columna-->
 					</div><!--close row bitacora-->
 					<div class="row">
 						<div class="col-xs-12 ">
@@ -116,11 +114,21 @@
 										<h3 class="panel-title"> Punta Arenas y sus Picadas</h3>
 									</div>
 									<div class="panel-body">
-										<a href="#" class="thumbnail"><img src="assets/img/torres.jpg"  alt=""></a>
+										<a href="https://torresdelpaine.com/blog/" class="thumbnail"><img src="assets/img/torres.jpg"  alt=""></a>
 									</div>
 									<div class="panel-footer">
 										<h6>En una semana recorri Punta Arenas y conocí algunas de sus picadas gastronómicas.</h6>
-										<p>Sigueme!</p>
+										<div class="row">
+											<div class="col-xs-6">
+												<p>¡Sigueme!
+										<a href="#" id="mb" class="boton" onclick = "changeColor(this);"><span class="glyphicon glyphicon-heart"></span></a> </p>
+											</div>
+											<div class="col-xs-4">
+												<a href="#">Comentarios</a> 
+											</div>
+										</div>
+										
+										
 									</div>
 								</div>
 								<div class="rear">
@@ -132,11 +140,12 @@
 					<div class="row">
 						<div class="col-xs-12">
 							<div class="container" id="pines"><!--lugar donde irán las historias-->
-
-    					</div>
+							</div>
 						</div>
 					</div>
 				</div><!-- close pestaña bitacora-->
+			</div>
+
 
 				<div id="mochileros" class="tabcontent">
   				<h3>Mochileros</h3>
