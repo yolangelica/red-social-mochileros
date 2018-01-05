@@ -392,3 +392,14 @@ a {
   font-size: 22px;
   color: black;
 }
+/* perfil format */
+.user h3 {
+  text-align: center;
+  color: #FFA81E;
+}
+.user h4 {
+  text-align: center;
+}
+.user p {
+  text-align: center;
+}
