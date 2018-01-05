@@ -9,24 +9,28 @@
 	padding: 0;
 }
 /* navegador Movil */
-.carpLogo{ /*LOGO CARPA*/
-	width: 52px;
-    height: 52px;
-    float: right;
-    margin-right:18px;
+
+
+
+.btn-menu{
+	border:none;
+	display: inline-block;
+}
+.title-logo{
+font-family: 'Courgette', cursive;	
+color: #B9D40F;
 }
 
-.flag{
-	width: 30px;
-	height: 25px;
+.logo-mochileros{
+	width: 30%;
+	float: right;
+	margin-right: 20px;
+	
 }
-
 
 .imgCamping{
-	background-image: url(../img/camping.jpg);
+	background-image: url(../img/fondo.jpg);
 	background-repeat: no-repeat;
-	
-	background-size: 100%;
 	background-position: 95% 93%;
 	padding-top:35%;
 	padding-bottom:15% ;
@@ -69,9 +73,6 @@
     width: 140px;
     margin-left :15px;
 
-
-	
-
 }
 
 .mochilero{
@@ -80,7 +81,10 @@
 	height: 100px;
 }
 
-
+.contenedor-header-bitacora{
+	border-bottom: 1px solid #BDBDBD;
+	margin-bottom: 15px;
+}
 
 .chat-img{
 	width: 100px;
@@ -299,7 +303,7 @@ span.psw {
 .tab {
     overflow: hidden;
     border: none;
-    background-color: #FF9408;
+    background-color:#92CB00;
     color: #FFFFFF;
 }
 
@@ -354,13 +358,23 @@ span.psw {
   color: white;
 }
 
+/*boton crea bitacora*/
+.container-crea-bitacora{
+	border:1px solid gray;
+	border-radius: 15px ;
+	margin-top:8px;
+	margin-bottom: 8px;
+	background-color: #EFEFEF;
+
+}
+
 /**/
 .img-demo{
 	height: 100px;
 }
 
 
-/*ESTILOS CARDS MMOCHILEROS*/
+/*ESTILOS CARDS MOCHILEROS*/
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
@@ -374,18 +388,7 @@ span.psw {
   font-size: 18px;
 }
 
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
+
 
 a {
   text-decoration: none;

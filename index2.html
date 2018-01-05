@@ -21,7 +21,8 @@
 			    	<span class="icon-bar"></span>
 			     	<span class="icon-bar"></span>
 			    </button>
-			    <img  class="carpLogo" src="assets/img/carpa.png" alt="">
+
+			    <img class="logo-mochileros img-responsive" src="assets/img/logoHome2.png" alt="">
 			  </div>
 
 <!-- NAVEGADOR DESKTOP -->
@@ -38,7 +39,7 @@
 	<section>
 		<div class="row">
 			<div class="col-xs-12 ">
-				<h5 class="text-center"><dt>EXPERIENCIAS Y AVENTURAS DE NUESTROS MOCHILEROS</dt></h5>
+				<h5 class="text-center"><dt>DISFRUTA LAS AVENTURAS DE NUESTROS MOCHILEROS</dt></h5>
 			</div>
 			<div class="col-xs-12">
 				<div class="tab">
@@ -51,9 +52,9 @@
 		</div>
 				<!--CONTENIDO TABS-->
 				<div id="bitacoras" class="tabcontent"> <!--contenido tab Bitacora-->
-					<div class="row">
-						<div class="col-xs-7">
-							<h5>Bitacoras y Experiencias</h5>
+					<div class="row contenedor-header-bitacora">
+						<div class="col-xs-6 ">
+							<h4><strong>Bitacoras y Experiencias</strong></h4>
 							<h6>Busca historias de mochileros</h6>
 							<!--FILTRO BITACORAS POR ZONA-->	
 							<div class="dropdown styleDrop">
@@ -65,10 +66,13 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-xs-5"><!--SEGUNDA COLUMNA CREAR BITACORA Y MODAL-->
-							<h6 class="text-center">Comienza y escribe tu historia!</h6>
+						<div class="col-xs-6"><!--SEGUNDA COLUMNA CREAR BITACORA Y MODAL-->
+							<div class=" container container-crea-bitacora">
+								<h6 class="text-center"><strong>Comienza y escribe tu historia!</strong></h6>
   						<!-- Trigger the modal with a button -->
-  						<button type="button" class="btn btn-info btn-lg btn-bitacora" data-toggle="modal" data-target="#myModal"><h6>Crear bitacora</h6></button>
+  							<button type="button" class="btn btn-info btn-lg btn-bitacora" data-toggle="modal" data-target="#myModal"><h6>Crear bitacora</h6></button>
+							</div>
+							
 							<div class="modal fade" id="myModal" role="dialog">
     						<div class="modal-dialog">
     							<!-- Modal content-->
@@ -144,8 +148,58 @@
 
 				<!--TABS CONTENIDO MOCHILEROS-->
 				<div id="mochileros" class="tabcontent container">
-  				<h3>Mochileros</h3>
-  				<p>Conoce a otros mochileros, siguelos y conoce sus aventuras.</p> 
+					<div class="row">
+						<div class="col-xs-6">
+							<h3><strong>Mochileros</strong></h3>
+							<p >Conoce a otros mochileros, siguelos y conoce sus aventuras.</p> 
+						</div>
+						<div class="col-xs-6">
+							<div class=" container container-crea-bitacora">
+  						<!-- Trigger the modal with a button -->
+  							<button type="button" class="btn btn-info btn-lg btn-bitacora" data-toggle="modal" data-target="#myModal2"><h6>Crear Perfil</h6></button>
+							</div>
+						</div>
+					</div>
+
+					<!--MODAL-->
+						<div class="modal fade" id="myModal2" role="dialog">
+    						<div class="modal-dialog">
+    							<!-- Modal content-->
+      						<div class="modal-content">
+        						<div class="modal-header">
+          						<button type="button" class="close" data-dismiss="modal">&times;</button>
+          						<h4 class="modal-title">Crea tu perfil</h4>
+        						</div>
+        						<div class="modal-body">
+          						<div class="container">
+        								<form action="javascript:savePin()"><!--llama a funcion -->
+            							<div class="input-group">
+                						<span class="input-group-addon" id="titulo">Titulo</span>
+                						<input id="tituloInput2" type="text" class="form-control" placeholder="Pon un título" aria-describedby="titulo">
+            							</div>
+            							</br>
+            							<div class="input-group">
+                						<span class="input-group-addon" id="descripcion">Descripción</span>
+                						<input id="descripcionInput2" type="text" class="form-control" placeholder="Pon una descripción" aria-describedby="descripcion">
+            							</div>
+            							</br>
+            							<div class="input-group">
+                						<span class="input-group-addon" id="url">URL</span>
+                						<input id="urlInput2" type="text" class="form-control" placeholder="Pon la imagen a pinear" aria-describedby="url">
+            							</div>
+            							</br>
+            							<button type="submit" class="btn btn-default">Guardar</button>
+        								</form>
+    									</div>
+										</div><!--close modal body-->
+        						<div class="modal-footer">
+          						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        						</div>
+      						</div>
+      					</div>
+  						</div>
+  				
+  				
   				<div class="row">
   					<div class="col-xs-12">
   						<input type="text" placeholder="busca un viajero">
@@ -193,11 +247,15 @@
  								</div>
  								<p><button>Perfil</button></p>
 							</div>
-  						
   					</div>
-  					
   				</div>
-				</div>
+  				<div class="row">
+							<div class="col-xs-12">
+								<div class="container" id="aca"><!--lugar donde irán las historias-->
+								</div>
+							</div>
+						</div>
+				
 				<div id="mi-bitacora" class="tabcontent">
   				<h3>Mi Bitacora</h3>
   				<p>Todo lo que quieras compartir, tus aventuras, fotografias, incluso videos!</p>

@@ -58,11 +58,14 @@ function changeColor(x)
         x.style.color="red";
 }
 
-/* RED DE CONTACTOS*/
+/* crea bitacoras :imagen y texto*/
 
-  function save(){
+ function saveprofile(){
+    var title = $("#tituloInput2").val();//crea variable para rescatar valor escrito por usuario en titulo llamando ID desde HTML
+    var descrip = $("#descripcionInput2").val();//toma el valor de la descripcion
+    var ur= $("#urlInput2").val();// toma el valor de la URL
 
-    $("#mochileros").append("<div id='pin_" + idPin + " ' class='pin col-md-3'>" + 
+    $("#aca").append("<div id='pic_" + idPin + " ' class='pin col-md-3'>" + 
     //este es el frente
     "<div class='panel panel-success front'>" +
     "<div class='panel-heading'>" +
@@ -77,4 +80,8 @@ function changeColor(x)
     "<div class= 'rear'>" + 
     "</div>" + 
     "</div>");
+
 };
+/* close bitacoras*/
+
+
