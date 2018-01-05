@@ -406,3 +406,8 @@ a {
 .user p {
   text-align: center;
 }
+
+/**/
+.container-perfil-bitacoras{
+	border:1px solid gray;
+}

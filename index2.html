@@ -45,7 +45,6 @@
 				<div class="tab">
   				<p class="tablinks" onclick="openCity(event, 'bitacoras')" id="defaultOpen">Bitacoras</p>
   				<p class="tablinks" onclick="openCity(event, 'mochileros')">Mochileros</p>
-  				<p class="tablinks" onclick="openCity(event, 'mi-bitacora')">Mi Bitacora</p>
 					<p class="tablinks" onclick="openCity(event, 'perfil')">Mi Perfil</p>
 				</div>
 			</div>
@@ -249,50 +248,79 @@
 							</div>
   					</div>
   				</div>
+  			</div>
   				<div class="row">
-							<div class="col-xs-12">
-								<div class="container" id="aca"><!--lugar donde irán las historias-->
-								</div>
+						<div class="col-xs-12">
+							<div class="container" id="aca"><!--lugar donde irán las historias-->
 							</div>
 						</div>
-				
-				<div id="mi-bitacora" class="tabcontent">
-  				<h3>Mi Bitacora</h3>
-  				<p>Todo lo que quieras compartir, tus aventuras, fotografias, incluso videos!</p>
-				</div>
-				<div id="perfil" class="tabcontent"><!-- perfil de ususario -->
-  				<div class="row">
-						<div class="col-xs-12 col-md-4 user">
-  						<img class="img-circle img-responsive" src="assets/img/mochilero.jpg">
-  						<h3>Cristian costa</h3>
-  						<h4>Sobre mí</h4>
-  						<p>soy aventurero nato, me gusta el sur por su lluvia y gente</p>
-  						<button type="button" class="btn btn-info">Editar perfíl</button>
-  					</div>
-						<div class="col-xs-12 col-md-8">
-  						<div class="row">
- 								<div class="col-xs-4">34</div>
-  							<div class="col-xs-4">127</div>
+					</div>
+				<!--PERFIL USUARIO-->
+					<div id="perfil" class="tabcontent"><!-- perfil de ususario -->
+  					<div class="row">
+							<div class="col-xs-5 col-md-4 user">
+  							<img class="img-circle img-responsive" src="assets/img/mochilero.jpg">
+  							<h3>Cristian costa</h3>
+  							<h4>Sobre mí</h4>
+  							<p>soy aventurero nato, me gusta el sur por su lluvia y gente</p>
+  							<button type="button" class="btn btn-info">Editar perfíl</button>
+  							<div class="container-fluid">
+        					<form action="javascript:savePin()"><!--llama a funcion -->
+            			<div class="input-group">
+                		<span class="input-group-addon" id="titulo"></span>
+                		<input id="tituloInput" type="text" class="form-control" placeholder="Pon un título" aria-describedby="titulo">
+            			</div>
+            			</br>
+            			<div class="input-group">
+                		<span class="input-group-addon" id="descripcion"></span>
+                		<input id="descripcionInput" type="text" class="form-control" placeholder="Pon una descripción" aria-describedby="descripcion">
+            			</div>
+            			</br>
+            			<div class="input-group">
+                		<span class="input-group-addon" id="url"></span>
+                		<input id="urlInput" type="text" class="form-control" placeholder="Pon la imagen a pinear" aria-describedby="url">
+            			</div>
+            			</br>
+            			<button type="submit" class="btn btn-default">Guardar</button>
+        					</form>
+    						</div>
+							<div class="container" id="pines">
+							</div>
   						</div>
-  						<div class="row">
-  							<div class="col-xs-4">seguidores</div>
-  							<div class="col-xs-4">seguidos</div>
+							<div class="col-xs-7 col-md-8">
+  							<div class="row">
+ 									<div class="col-xs-6">34</div>
+  								<div class="col-xs-6">127</div>
+  							</div>
+  							<div class="row">
+  								<div class="col-xs-6">seguidores</div>
+  								<div class="col-xs-6">seguidos</div>
+  							</div>
+  							<div class="col-xs-12 container-perfil-bitacoras">
+  								<h3>Mis Bitacoras</h3>
+  								<div class="panel panel-success front">
+										<div class="panel-heading">
+											<h3 class="panel-title"> Punta Arenas y sus Picadas</h3>
+										</div>
+										<div class="panel-body">
+											<a href="https://torresdelpaine.com/blog/" class="thumbnail"><img src="assets/img/torres.jpg"  alt=""></a>
+										</div>
+										<div class="panel-footer">
+											<h6>En una semana recorri Punta Arenas y conocí algunas de sus picadas gastronómicas.</h6>
+											<div class="row">
+												<div class="col-xs-12">
+													<h5>visto 137 veces</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+  							</div>	
   						</div>
-  						<div class="col-xs-12">
-  							<h3>Mis imagenes</h3>
-  							<img src="assets/img/cascada.jpg" alt="">
-  							<img src="assets/img/isla.jpg" alt="">
-  							<img src="assets/img/playa.jpg" alt="">
-  							<img src="assets/img/salar.jpeg" alt="">
-  						</div>	
-  					</div>
+						</div>
+  				</div>
+			
+		
 
-  				</div>
-  				</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
