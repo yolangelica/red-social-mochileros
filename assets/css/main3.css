@@ -30,8 +30,9 @@ header {
 
 /*Modifica el tamaño de las imagenes*/
 .img-nav {
-	width: 4em;
+	width: 5em;
 	border-radius: 180px;
+	margin:7px;
 }
 li {
 	display: inline-block;
@@ -43,8 +44,9 @@ li {
 	width: 50em;
 }
 .contact {
-	border: 1px solid black;
-	padding: 0px;
+	border: 1px solid gray;
+	background-color: #F2F2F2;
+	padding: 3px;
 }
 .borderContact {
 	border: 1px solid black;
@@ -71,3 +73,11 @@ li {
 	padding:5px;
 }
 
+.back2{
+	margin:10px;
+	font-size: 20px;
+}
+
+.title-chat{
+	margin-left:15px;
+}
