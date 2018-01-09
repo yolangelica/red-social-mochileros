@@ -21,11 +21,10 @@
 			    	<span class="icon-bar"></span>
 			     	<span class="icon-bar"></span>
 			    </button>
-
-			    <img class="logo-mochileros img-responsive" src="assets/img/logoHome2.png" alt="">
+					<img class="logo-mochileros img-responsive" src="assets/img/logoHome2.png" alt="">
 			  </div>
 
-<!-- NAVEGADOR DESKTOP -->
+				<!-- NAVEGADOR DESKTOP -->
 			  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			    <ul class="nav navbar-nav navbar-right">
 			      <li><a href="#">Regístrate</a></li>
@@ -35,27 +34,31 @@
 			</div><!-- /.container-->
 		</nav>
 	</header>
-
-	<section>
+		<!--TITULO INDEX2-->
 		<div class="row">
 			<div class="col-xs-12 "><!--ICONO RETROCEDER-->
 				<a href="index1.html"><span class="glyphicon glyphicon-chevron-left back"></span></a>
 				<h5 class="text-center"><dt>DISFRUTA LAS AVENTURAS DE NUESTROS MOCHILEROS</dt></h5>
 			</div>
 			<div class="col-xs-12">
-				<div class="tab">
+				<div class="tab"><!--TABS-->
   				<p class="tablinks" onclick="openCity(event, 'bitacoras')" id="defaultOpen">Bitacoras</p>
   				<p class="tablinks" onclick="openCity(event, 'mochileros')">Mochileros</p>
 					<p class="tablinks" onclick="openCity(event, 'perfil')">Mi Perfil</p>
 				</div>
 			</div>
 		</div>
-				<!--CONTENIDO TABS-->
-				<div id="bitacoras" class="tabcontent"> <!--contenido tab Bitacora-->
+
+				<!--CONTENIDO TABS BITACORA-->
+				<div id="bitacoras" class="tabcontent"> 
 					<div class="row contenedor-header-bitacora">
-						<div class="col-xs-6 ">
+						<div class="col-xs-12 col-md-12">
 							<h4><strong>Bitacoras y Experiencias</strong></h4>
-							<h6>Busca historias de mochileros</h6>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-md-4 ">
+							<h5>Busca historias de mochileros</h5>
 							<!--FILTRO BITACORAS POR ZONA-->	
 							<div class="dropdown styleDrop">
 								<button class="btn btn-default dropdown-toggle btn-style" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Bitacoras de la Zona :<span class="caret"></span></button>
@@ -66,53 +69,13 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-xs-6"><!--SEGUNDA COLUMNA CREAR BITACORA Y MODAL-->
-							<div class=" container container-crea-bitacora">
-								<h6 class="text-center"><strong>Comienza y escribe tu historia!</strong></h6>
-  						<!-- Trigger the modal with a button -->
-  							<button type="button" class="btn btn-info btn-lg btn-bitacora" data-toggle="modal" data-target="#myModal"><h6>Crear bitacora</h6></button>
-							</div>
-							
-							<div class="modal fade" id="myModal" role="dialog">
-    						<div class="modal-dialog">
-    							<!-- Modal content-->
-      						<div class="modal-content">
-        						<div class="modal-header">
-          						<button type="button" class="close" data-dismiss="modal">&times;</button>
-          						<h4 class="modal-title">Escribe una breve reseña de tu viaje</h4>
-        						</div>
-        						<div class="modal-body">
-          						<div class="container">
-        								<form action="javascript:savePin()"><!--llama a funcion -->
-            							<div class="input-group">
-                						<span class="input-group-addon" id="titulo">Titulo</span>
-                						<input id="tituloInput" type="text" class="form-control" placeholder="Pon un título" aria-describedby="titulo">
-            							</div>
-            							</br>
-            							<div class="input-group">
-                						<span class="input-group-addon" id="descripcion">Descripción</span>
-                						<input id="descripcionInput" type="text" class="form-control" placeholder="Pon una descripción" aria-describedby="descripcion">
-            							</div>
-            							</br>
-            							<div class="input-group">
-                						<span class="input-group-addon" id="url">URL</span>
-                						<input id="urlInput" type="text" class="form-control" placeholder="Pon la imagen a pinear" aria-describedby="url">
-            							</div>
-            							</br>
-            							<button type="submit" class="btn btn-default">Guardar</button>
-        								</form>
-    									</div>
-										</div><!--close modal body-->
-        						<div class="modal-footer">
-          						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        						</div>
-      						</div>
-      					</div>
-  						</div><!--close modal-->
+						<div class="col-xs-6 col-md-4"><!--SEGUNDA COLUMNA CREAR BITACORA Y MODAL-->
+							<button type="button" class="btn btn-info btn-lg btn-bitacora" data-toggle="modal" data-target="#myModal"><h4>Crear bitacora</h4></button>
 						</div>
-					</div>	<!--CLOSE  COL TABS -->
-					
-					<div class="row"><!--BITACORA DE EJEMPLO EN MURO-->
+					</div>			
+							
+					<!--BITACORA DE EJEMPLO EN MURO-->	
+					<div class="row">
 						<div class="col-xs-12 ">
 							<div class="panel panel-success front">
 								<div class="panel-heading">
@@ -138,13 +101,14 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-xs-12">
-								<div class="container" id="pines"><!--lugar donde irán las historias-->
+							<div class="col-xs-12 col-md-12">
+								<div class="container-fluid" id="pines"><!--lugar donde irán las historias-->
 								</div>
 							</div>
 						</div>
-					</div><!-- close pestaña bitacora-->
-				</div>
+					</div>
+				</div><!-- close tabs bitacora-->
+
 
 				<!--TABS CONTENIDO MOCHILEROS-->
 				<div id="mochileros" class="tabcontent container">
@@ -154,63 +118,14 @@
 							<p >Conoce a otros mochileros, siguelos y conoce sus aventuras.</p> 
 						</div>
 						<div class="col-xs-6">
-							<div class=" container container-crea-bitacora">
-  						<!-- Trigger the modal with a button -->
-  							<button type="button" class="btn btn-info btn-lg btn-bitacora" data-toggle="modal" data-target="#myModal2"><h6>Crear Perfil</h6></button>
-							</div>
+							<div class="row">
+								<div class="offset-md-4  col-md-6 " >
+									<button type="button" class="btn btn-info btn-bitacora" data-toggle="modal" data-target="#myModalPerfil"><h4>Crear Perfil</h4></button><!--BOTON CREAR PERFIL-->
+								</div>
+							</div>		
 						</div>
 					</div>
-
-					<!--MODAL-->
-						<div class="modal fade" id="myModal2" role="dialog">
-    						<div class="modal-dialog">
-    							<!-- Modal content-->
-      						<div class="modal-content">
-        						<div class="modal-header">
-          						<button type="button" class="close" data-dismiss="modal">&times;</button>
-          						<h4 class="modal-title">Crea tu perfil</h4>
-        						</div>
-        						<div class="modal-body">
-          						<div class="container">
-        								<form action="javascript:savePin()"><!--llama a funcion -->
-            							<div class="input-group">
-                						<span class="input-group-addon" id="titulo">Nombre</span>
-                						<input id="tituloInput2" type="text" class="form-control" placeholder="Pon un nombre" aria-describedby="titulo">
-            							</div>
-            							</br>
-            							<div class="input-group">
-                						<span class="input-group-addon" id="descripcion">Correo</span>
-                						<input id="descripcionInput2" type="text" class="form-control" placeholder="Pon tu correo" aria-describedby="descripcion">
-            							</div>
-            							</br>
-            							<div class="input-group">
-                						<span class="input-group-addon" id="url">Usuario</span>
-                						<input id="urlInput2" type="text" class="form-control" placeholder="Pon un nombre de usuario" aria-describedby="url">
-            							</div>
-            							</br>
-            							<div class="input-group">
-                						<span class="input-group-addon" id="url">Contraseña</span>
-                						<input id="urlInput2" type="text" class="form-control" placeholder="Pon una contraseña" aria-describedby="url">
-            							</div>
-            							</br>
-            							<div class="input-group">
-                						<span class="input-group-addon" id="url">Confirma Contraseña</span>
-                						<input id="urlInput2" type="text" class="form-control" placeholder="Confirma tu contraseña" aria-describedby="url">
-            							</div>
-            							</br>
-            							<button type="submit" class="btn btn-default">Guardar</button>
-        								</form>
-    									</div>
-										</div><!--close modal body-->
-        						<div class="modal-footer">
-          						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        						</div>
-      						</div>
-      					</div>
-  						</div>
-  						
-  				
-  				<div class="row">
+					<div class="row">
   					<div class="col-xs-12">
   						<input type="text" placeholder="busca un viajero">
   					</div>
@@ -257,82 +172,134 @@
  								</div>
  								<p><button>Perfil</button></p>
 							</div>
+
   					</div>
+  					<div class="container" id="pin"><!--lugar donde irán las historias-->
+								</div>
   				</div>
   			</div>
-  				<div class="row">
-						<div class="col-xs-12">
-							<div class="container" id="aca"><!--lugar donde irán las historias-->
-							</div>
-						</div>
-					</div>
-				<!--PERFIL USUARIO-->
-					<div id="perfil" class="tabcontent"><!-- perfil de ususario -->
-  					<div class="row">
-							<div class="col-xs-5 col-md-4 user">
-  							<img class="img-circle img-responsive" src="assets/img/mochilero.jpg">
-  							<h3>Cristian costa</h3>
-  							<h4>Sobre mí</h4>
-  							<p>soy aventurero nato, me gusta el sur por su lluvia y gente</p>
-  							<button type="button" class="btn btn-info">Editar perfíl</button>
-  							<div class="container-fluid">
-  								<h5>Escribe una nueva historia</h5>
-        					<form action="javascript:savePin()"><!--llama a funcion -->
-            			<div class="input-group">
-                		<span class="input-group-addon" id="titulo"></span>
-                		<input id="tituloInput" type="text" class="form-control" placeholder="Pon un título" aria-describedby="titulo">
-            			</div>
-            			</br>
 
-            			<div class="input-group">
-                		<span class="input-group-addon" id="descripcion"></span>
-                		<input id="descripcionInput" type="text" class="form-control" placeholder="Pon una descripción" aria-describedby="descripcion">
-            			</div>
-            			</br>
-            			<div class="input-group">
-                		<span class="input-group-addon" id="url"></span>
-                		<input id="urlInput" type="text" class="form-control" placeholder="Pon la imagen a pinear" aria-describedby="url">
-            			</div>
-            			</br>
-            			<button type="submit" class="btn btn-default">Guardar</button>
-        					</form>
-    						</div>
-							<div class="container" id="pines">
-							</div>
+  				
+
+				<!--PERFIL USUARIO-->
+				<div id="perfil" class="tabcontent"><!-- perfil de ususario -->
+  				<div class="row">
+						<div class="col-xs-5 col-md-4 user">
+  						<img class="img-circle img-responsive" src="assets/img/mochilero.jpg">
+  						<h3>Cristian costa</h3>
+  						<h4>Sobre mí</h4>
+  						<p>soy aventurero nato, me gusta el sur por su lluvia y gente</p>
+  						<button type="button" class="btn btn-info">Editar perfíl</button>
+						</div>
+						<div class="col-xs-7 col-md-8">
+  						<div class="row">
+ 								<div class="col-xs-6">34</div>
+  							<div class="col-xs-6">127</div>
   						</div>
-							<div class="col-xs-7 col-md-8">
-  							<div class="row">
- 									<div class="col-xs-6">34</div>
-  								<div class="col-xs-6">127</div>
-  							</div>
-  							<div class="row">
-  								<div class="col-xs-6">seguidores</div>
-  								<div class="col-xs-6">seguidos</div>
-  							</div>
-  							<div class="col-xs-12 container-perfil-bitacoras">
-  								<h3>Mis Bitacoras</h3>
-  								<div class="panel panel-success front">
-										<div class="panel-heading">
-											<h3 class="panel-title"> Punta Arenas y sus Picadas</h3>
-										</div>
-										<div class="panel-body">
-											<a href="https://torresdelpaine.com/blog/" class="thumbnail"><img src="assets/img/torres.jpg"  alt=""></a>
-										</div>
-										<div class="panel-footer">
-											<h6>En una semana recorri Punta Arenas y conocí algunas de sus picadas gastronómicas.</h6>
-											<div class="row">
-												<div class="col-xs-12">
-													<h5><span class="glyphicon glyphicon-eye-open" ></span> visto 137 veces</h5>
-												</div>
+  						<div class="row">
+  							<div class="col-xs-6">seguidores</div>
+  							<div class="col-xs-6">seguidos</div>
+  						</div>
+  						<div class="col-xs-12 container-perfil-bitacoras">
+  							<h3>Mis Bitacoras</h3>
+  							<div class="panel panel-success front">
+									<div class="panel-heading">
+										<h3 class="panel-title"> Punta Arenas y sus Picadas</h3>
+									</div>
+									<div class="panel-body">
+										<a href="https://torresdelpaine.com/blog/" class="thumbnail"><img src="assets/img/torres.jpg"  alt=""></a>
+									</div>
+									<div class="panel-footer">
+										<h6>En una semana recorri Punta Arenas y conocí algunas de sus picadas gastronómicas.</h6>
+										<div class="row">
+											<div class="col-xs-12">
+												<h5><span class="glyphicon glyphicon-eye-open" ></span> visto 137 veces</h5>
 											</div>
 										</div>
 									</div>
-  							</div>	
-  						</div>
-						</div>
-  				</div>
+								</div>
+  						</div>	
+  					</div>
+					</div><!--close tabs row perfil usuario-->
+  			</div><!--close tabs perfil usuario-->
 			
-		
+		<!--MODALS-->
+					<!--modal bitacora-->
+					<div class="modal fade" id="myModal" role="dialog">
+    				<div class="modal-dialog">
+    					<!-- Modal content-->
+      				<div class="modal-content">
+        				<div class="modal-header">
+          				<button type="button" class="close" data-dismiss="modal">&times;</button>
+          				<h4 class="modal-title">Escribe una breve reseña de tu viaje</h4>
+        				</div>
+        				<div class="modal-body">
+          				<div class="">
+        						<form action="javascript:savePin()"><!--llama a funcion -->
+            					<div class="input-group">
+                				<span class="input-group-addon" id="titulo">Titulo</span>
+                					<input id="tituloInput" type="text" class="form-control" placeholder="Pon un título" aria-describedby="titulo">
+            					</div>
+            					</br>
+            					<div class="input-group">
+                				<span class="input-group-addon" id="descripcion">Descripción</span>
+                				<input id="descripcionInput" type="text" class="form-control" placeholder="Pon una descripción" aria-describedby="descripcion">
+            					</div>
+            					</br>
+            					<div class="input-group">
+                				<span class="input-group-addon" id="url">URL</span>
+                				<input id="urlInput" type="text" class="form-control" placeholder="Pon la imagen a pinear" aria-describedby="url">
+            					</div>
+            					</br>
+            					<button type="submit" class="btn btn-default">Guardar</button>
+        						</form>
+    							</div>
+								</div><!--close modal body-->
+        				<div class="modal-footer">
+          				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        				</div>
+      				</div>
+      			</div>
+  				</div><!--close modal-->
+
+  				<!--modal perfil-->
+  				
+					<div class="modal fade" id="myModalPerfil" role="dialog"><!--id:myModalPerfil-->
+    				<div class="modal-dialog">
+    					<!-- Modal content-->
+      				<div class="modal-content">
+        				<div class="modal-header">
+          				<button type="button" class="close" data-dismiss="modal">&times;</button>
+          				<h4 class="modal-title">Escribe una breve reseña de tu Perfil</h4>
+        				</div>
+        				<div class="modal-body">
+          				<div class="">
+        						<form action="javascript:saveP()"><!--llama a funcion -->
+            					<div class="input-group">
+                				<span class="input-group-addon" id="url">URL</span>
+                				<input id="urlIns" type="text" class="form-control" placeholder="Pon la imagen a pinear" aria-describedby="url">
+            					</div>
+            					</br>
+            					<div class="input-group">
+                				<span class="input-group-addon" id="Perfil">Tu nombre</span>
+                				<input id="namePerfil" type="text" class="form-control" placeholder="Tu nombre de perfil" aria-describedby="descripcion">
+            					</div>
+            					</br>
+            					<div class="input-group">
+                				<span class="input-group-addon" id="titlePerfil">Un poco de ti</span>
+                					<input id="descriptionPerfil" type="text" class="form-control" placeholder="sobre ti" aria-describedby="titulo">
+            					</div>
+            					</br>
+            					<button type="submit" class="btn btn-default">Guardar</button>
+        						</form>
+    							</div>
+								</div><!--close modal body-->
+        				<div class="modal-footer">
+          				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        				</div>
+      				</div>
+      			</div>
+  				</div><!--close modal-->
 
 
 

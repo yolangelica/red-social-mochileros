@@ -28,6 +28,17 @@ color: #B9D40F;
 	
 }
 
+.img-camping{
+	margin-left: 150px;
+
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+	background-color:rgba(200,199,199,0.3);
+ 	max-width: 300px;
+  	padding: 30px;
+    text-align: center;
+    font-family: arial;
+}
+
 .imgCamping{
 	background-image: url(../img/fondo.jpg);
 	background-repeat: no-repeat;
@@ -47,20 +58,11 @@ color: #B9D40F;
 
 /*DESKTOP*/
 
-.titleh1, .pline{
-	color:#FFFFFF;
-}
-.line1{
-	padding-right: 10%;
-	padding-left: 5%;
-	color: #FFFFFF;
+.titleh1, .titleh2 {
+	color:#454545;
 }
 
-.line2{
-	padding-left: 10%;
-	padding-bottom: 8%;
-	color:#FFFFFF;
-}
+
 
 
 
@@ -278,7 +280,11 @@ span.psw {
 
 
 .btn-bitacora{
-	margin-bottom: 25px;
+	margin-top: 30px;
+	margin-bottom:30px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+	
+	
 }
 /* MODAL2 REGISTER */
 
@@ -359,14 +365,7 @@ span.psw {
 }
 
 /*boton crea bitacora*/
-.container-crea-bitacora{
-	border:1px solid gray;
-	border-radius: 15px ;
-	margin-top:8px;
-	margin-bottom: 8px;
-	background-color: #EFEFEF;
 
-}
 
 /**/
 .img-demo{

@@ -32,7 +32,7 @@ function savePin(){
     var descripcion = $("#descripcionInput").val();//toma el valor de la descripcion
     var url= $("#urlInput").val();// toma el valor de la URL
 
-    $("#pines").append("<div id='pin_" + idPin + " ' class='pin col-md-3'>" + 
+    $("#pines").append("<div id='pin_" + idPin + " ' class='pin col-md-6 col-xs-12'>" + 
     //este es el frente
     "<div class='panel panel-success front'>" +
     "<div class='panel-heading'>" +
@@ -50,6 +50,36 @@ function savePin(){
 
 };
 
+/*crea PERFIL*/
+var idP= 0 ;
+$(document).ready(()=> {
+
+});
+
+
+
+function saveP(){
+    var titlePerfil = $("#namePerfil").val();//crea variable para rescatar valor escrito por usuario en titulo llamando ID desde HTML
+    var descript = $("#descriptionPerfil").val();//toma el valor de la descripcion
+    var urlImg= $("#urlIns").val();// toma el vTITalor de la URL
+
+    $("#pin").append("<div id='pin_" + idP + " ' class='pin col-md-6 col-xs-4'>" + 
+    //este es el frente
+    "<div class='panel panel-success front'>" +
+    "<div class='panel-heading'>" +
+    "<h3 class='panel-title'>" + titlePerfil + "</h3>" + "</div>" +
+    "<div class= 'panel-body'>" +
+    "<a href='#' class='thumbnail'>" +
+    "<img src='" + urlImg + " ' alt='...'>" +
+    "</a>" + 
+    "</div>" + 
+    "<div class='panel-footer'>" + descript + "</div> </div>" + 
+    //este es el panel detras 
+    "<div class= 'rear'>" + 
+    "</div>" + 
+    "</div>");
+
+};
 
 /*CAMBIAR COLOR A CORAZON AL HACER CLICK*/
 
